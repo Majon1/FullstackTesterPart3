@@ -78,6 +78,7 @@ app.get('/api/notes/:id', (req, res) => {
   console.log(id)
   const note = notes.find(note => note.id === id)
     
+  
   if (note) {
     res.json(note)
   }
